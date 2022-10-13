@@ -1,4 +1,4 @@
-var name = "Andres Trostdorf";
+const name = "Andres Trostdorf";
 var age = 25;
 var single = false;
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -35,3 +35,5 @@ var user = {
     },
 };
 console.log(user);
+
+console.log("user petNameOne", user.pets.pet1.animal);
