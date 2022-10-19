@@ -194,3 +194,82 @@ if (animal === "cat" || animal === "dog") {
 animal === "cat" || animal === "dog"
   ? console.log("This animal is a cat or a dog")
   : console.log("This animal is not a cat or a dog");
+
+console.log("Antes del ciclo de iteracion while");
+
+// Ciclo - Bucle - Iteracion - Loop
+// While cycle
+// El ciclo while ejecuta un bloque de codigo mientras una condicion sea verdadera
+
+let countWhile = 10;
+while (countWhile < 20) {
+  console.log("Contador", countWhile);
+  // Se genera un loop infinito si no se incrementa el contador
+  countWhile++;
+}
+
+console.log("Despues del ciclo de iteracion while");
+
+// Do while cycle
+
+let countDoWhile = 10;
+do {
+  console.log("Contador", countDoWhile);
+  countDoWhile++;
+} while (countDoWhile < 20);
+
+console.log("Despues del ciclo de iteracion Do while");
+
+// For cycle
+// El ciclo for se ejecuta un numero determinado de veces mientras una condicion sea verdadera
+
+console.log("Antes del ciclo de iteracion for");
+
+let countFor = 10;
+
+// i++ reemplaza a countFor = countFor + 1
+
+for (i = 0; i <= countFor; i++) {
+  console.log("Iniciatec");
+}
+
+for (let i = 0; i < countFor; i++) {
+  // console.log("Contador", i);
+  console.log(`l valor del contador es ${i}`);
+}
+
+console.log("Despues del ciclo de iteracion for");
+
+// For in an array
+const arrayToFor = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for (let i = 0; i < arrayToFor.length; i++) {
+  console.log("Usando la longitud del array");
+}
+
+for (let i = 0; i < arrayToFor.length; i++) {
+  console.log(
+    `El valor del indice del elemento es ${i} y el valor del elemento es ${arrayToFor[i]}`
+  );
+}
+
+let fruitsArray = ["Manzanas", "Bananas", "Naranjas", "Papayas"];
+
+for (let i = 0; i < fruitsArray.length; i++) {
+  console.log(
+    `El valor del indice del elemento es ${i} y el nombre de la fruta es ${fruitsArray[i]}`
+  );
+}
+
+const dataUsers = [
+  {
+    id: 1,
+    name: "Leanne Graham",
+    username: "Bret",
+    email: "bret@leanne.com",
+  },
+];
+
+for (let i = 0; i < dataUsers.length; i++) {
+  console.log("dataUsers", dataUsers[i].name);
+}
