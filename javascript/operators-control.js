@@ -151,3 +151,46 @@ if (ageUserToNumber < 18) {
 } else {
   console.log("Eres adulto mayor");
 }
+
+console.log("Un codigo que se ejecuta antes del switch");
+
+const expression = "Papayas";
+switch (expression) {
+  case "Manzanas":
+    console.log("No vendemos esta fruta aqui");
+    break;
+  case "Bananas":
+  case "Naranjas":
+    console.log("Tenemos Bananas y Naranjas");
+    break;
+  case "Papayas":
+    console.log("Tenemos Papayas");
+    // expected output: "Tenemos Papayas."
+    break;
+  default:
+    console.log("Lo siento, no tenemos ${expression}.");
+}
+
+console.log("Un codigo que se ejecuta despues del switch");
+
+const fruitUser = prompt(
+  "Ingresa tu fruta favorita, 1. Manzanas, 2. Bananas, 3. Naranjas, 4. Papayas"
+);
+console.log("fruitUser", fruitUser, typeof fruitUser);
+
+const animal = "cat";
+
+if (animal === "cat" || animal === "dog") {
+  console.log("This animal is a cat or a dog");
+} else {
+  console.log("This animal is not a cat or a dog");
+}
+// Condicional ternario (condicion) ? true : false
+// Analiza una condition y si es true, devuelve el valor de la izquierda, si es false, devuelve el valor de la derecha
+// Para simplificar el codigo, ECMA6 implementa los operadores "?" y ":" para reemplazar el if else
+
+// condicion '?' true : false
+
+animal === "cat" || animal === "dog"
+  ? console.log("This animal is a cat or a dog")
+  : console.log("This animal is not a cat or a dog");
